@@ -1,0 +1,27 @@
+{
+  "name": "memory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moxx1990/Memory.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Moxx1990/Memory/issues"
+  },
+  "homepage": "https://github.com/Moxx1990/Memory#readme",
+  "devDependencies": {
+    "sass": "^1.102.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.1.5"
+  }
+}
