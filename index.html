@@ -7,14 +7,145 @@
     <title>Memory</title>
 </head>
 <body>
-    <section id="field">
-        <button class="card">
-            <div class="card__inner">
-                <div class="card__face"></div>
-                <div class="card__face card__face--back"></div>
+
+    <header>
+
+    </header>
+
+    <main>
+        <section id="intro">
+            <div>
+                <div>
+                    <h2>
+                        It's play time.
+                    </h2>
+
+                    <h1>
+                        Ready to play?
+                    </h1>
+
+                    <button>
+                        Play
+                    </button>
+                </div>
             </div>
-        </button>
-    </section>
+
+        </section>
+        
+        <section>
+            <h1>
+                Settings
+            </h1>
+            <div>
+                <label for="theme">Game themes</label>
+                <select id="theme" name="theme">
+                    <option>Code vibes</option>
+                    <option>Gaming</option>
+                    <option>DA Projects</option>
+                    <option>Food</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="player">Choose player</label>
+                <select id="player" name="player">
+                    <option>Blue</option>
+                    <option>Orange</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="size">Board size</label>
+                <select id="size" name="size">
+                    <option>16 cards</option>
+                    <option>24 cards</option>
+                    <option>36 cards</option>
+                </select>
+            </div>
+
+            <aside>
+                <img >
+                <div>
+                    //Hier werden nur die Sachen eingefügt, die auch ausgewählt wurden Start ist so lange grau, wenn nicht alles ausgewählt wurde
+                    <span>Game theme</span>
+                    <span>Player</span>
+                    <span>Board size</span>
+                    <button>Start</button>
+                </div>
+            </aside>
+        </section>
+        
+        <section>
+            <div>
+                <div>
+                    <span>Blue</span>
+                    <span>Orange</span>
+                </div>
+
+                <div>
+                    Current Player
+                </div>
+
+                <button>Exit game</button>
+
+            </div>
+
+            <dialog>
+                <div>
+                    Are you sure you want to quit the game? 
+                </div>
+
+                <div>
+                    <button>Back to game</button>
+                    <button>Exit game</button>
+                </div>
+            </dialog>
+
+            <div>
+                Gamefield 4x4 - 4x6 - 6x6
+            </div>
+        </section>
+
+        <section>
+            <h1>Game over</h1>
+            <h6>Final Score</h6>
+            <div>
+                Blue / Orange 
+            </div>
+        </section>
+
+        <section>
+
+            // If winner
+            <img Konfetti banner>
+            <h2>The winner is</h2>
+            <h1>Color Player</h1>
+            <img Player Icon>
+
+            // If draw
+            <h2>It's a</h2>
+            <h1>DRAW</h1>
+            <img DRAW Icon>
+
+            <button>
+                Home / Back to start
+            </button>
+        </section>
+
+        <section id="field">
+            <button class="card">
+                <div class="card__inner">
+                    <div class="card__face"></div>
+                    <div class="card__face card__face--back"></div>
+                </div>
+            </button>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
     
 <script type="module" src="/src/main.ts"></script>
 </body>
