@@ -13,7 +13,7 @@
     </header>
 
     <main>
-        <section id="intro">
+        <section id="intro" class="intro" style="display: none;">
             <div class="intro__background">
                 <div class="intro__content">
                     <h2 class="intro__content--subheading">
@@ -35,50 +35,99 @@
 
         </section>
         
-        <section style="display: none;">
-            <h1>
+        <section id="settings" class="settings-page">
+            <h1 class="settings--heading">
                 Settings
             </h1>
-            <div>
-                <label for="theme">Game themes</label>
-                <select id="theme" name="theme">
-                    <option>Code vibes</option>
-                    <option>Gaming</option>
-                    <option>DA Projects</option>
-                    <option>Food</option>
-                </select>
-            </div>
 
-            <div>
-                <label for="player">Choose player</label>
-                <select id="player" name="player">
-                    <option>Blue</option>
-                    <option>Orange</option>
-                </select>
-            </div>
+            <img class="settings--heading--icon" src="./assets/settings/line.svg" alt="Settings icon">
 
-            <div>
-                <label for="size">Board size</label>
-                <select id="size" name="size">
-                    <option>16 cards</option>
-                    <option>24 cards</option>
-                    <option>36 cards</option>
-                </select>
-            </div>
-
-            <aside>
-                <img >
-                <div>
-                    //Hier werden nur die Sachen eingefügt, die auch ausgewählt wurden Start ist so lange grau, wenn nicht alles ausgewählt wurde
-                    <span>Game theme</span>
-                    <span>Player</span>
-                    <span>Board size</span>
-                    <button>Start</button>
+        <div class="settings__layout">
+            <div class="settings">
+                <div class="settings__group settings__group--hoverable">
+                    <label class="settings__label"><img src="./assets/settings/style.svg" alt="Game themes icon">Game themes</label>
+                    <div class="settings__options">
+                        <label class="settings__option">
+                            <input type="radio" name="theme" value="code">
+                            <span class="settings__btn">Code vibes<img src="./assets/settings/arrow.svg" alt="Game themes icon"></span>
+                        </label>
+                        <label class="settings__option">
+                            <input type="radio" name="theme" value="gaming">
+                            <span class="settings__btn">Gaming<img src="./assets/settings/arrow.svg" alt="Game themes icon"></span>
+                        </label>
+                        <label class="settings__option">
+                            <input type="radio" name="theme" value="da-projects">
+                            <span class="settings__btn">DA Projects<img src="./assets/settings/arrow.svg" alt="Game themes icon"></span>
+                        </label>
+                        <label class="settings__option">
+                            <input type="radio" name="theme" value="food">
+                            <span class="settings__btn">Food<img src="./assets/settings/arrow.svg" alt="Game themes icon"></span>
+                        </label>
+                    </div>
                 </div>
-            </aside>
+
+                <div class="settings__group settings__group--hoverable">
+                    <label class="settings__label">Choose player</label>
+                    <div class="settings__options">
+                        <label class="settings__option">
+                            <input type="radio" name="player" value="blue">
+                            <span class="settings__btn">Blue<img src="./assets/settings/arrow.svg" alt="Game themes icon"></span>
+                        </label>
+                        <label class="settings__option">
+                            <input type="radio" name="player" value="orange">
+                            <span class="settings__btn">Orange<img src="./assets/settings/arrow.svg" alt="Game themes icon"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="settings__group settings__group--hoverable">
+                    <label class="settings__label"><img src="./assets/settings/size.svg" alt="Board size icon">Board size</label>
+                    <div class="settings__options">
+                        <label class="settings__option">
+                            <input type="radio" name="size" value="16">
+                            <span class="settings__btn">16 cards<img src="./assets/settings/arrow.svg" alt="Game themes icon"></span>
+                        </label>
+                        <label class="settings__option">
+                            <input type="radio" name="size" value="24">
+                            <span class="settings__btn">24 cards<img src="./assets/settings/arrow.svg" alt="Game themes icon"></span>
+                        </label>
+                        <label class="settings__option">
+                            <input type="radio" name="size" value="36">
+                            <span class="settings__btn">36 cards<img src="./assets/settings/arrow.svg" alt="Game themes icon"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="summary">
+                <img src="./assets/settings/themes/codevibes.jpg" alt="Preview Image" class="summary__image">
+
+                <div class="summary__content">
+                    <div class="summary__item">
+                    <span class="summary__label">Game theme:</span>
+                    <span class="summary__value">Code vibes</span>
+                </div>
+
+                <div class="summary__item">
+                    <span class="summary__label">Player:</span>
+                    <span class="summary__value summary__value--placeholder">Not chosen</span>
+                </div>
+
+                <div class="summary__item">
+                    <span class="summary__label">Board size:</span>
+                    <span class="summary__value summary__value--placeholder">Not chosen</span>
+                </div>
+
+    
+                <button class="summary__start-btn" disabled>
+                    Start
+                </button>
+            </div>
+        </aside>
+        </div>
         </section>
         
-        <section style="display: none;">
+        <section id="board" class="board" style="display: none;">
             <div>
                 <div>
                     <span>Blue</span>
@@ -109,7 +158,7 @@
             </div>
         </section>
 
-        <section style="display: none;">
+        <section id="game-over" class="game-over" style="display: none;">
             <h1>Game over</h1>
             <h6>Final Score</h6>
             <div>
@@ -117,7 +166,7 @@
             </div>
         </section>
 
-        <section style="display: none;">
+        <section id="result" class="result" style="display: none;">
 
             // If winner
             <img Konfetti banner>
