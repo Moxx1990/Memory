@@ -1,1 +1,54 @@
 @use '../abstracts/variables.scss' as *;
+
+.result {
+  background-color: #303131;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #aaa;
+    margin: 0;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  &__img {
+    max-width: 250px;
+    height: auto;
+    margin: 1.5rem 0;
+  }
+
+  &__btn {
+    background-color: #38b6ff;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: lighten(#38b6ff, 10%);
+    }
+  }
+}

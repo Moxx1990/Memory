@@ -36,153 +36,142 @@
         </section>
         
         <section id="settings" class="settings-page">
-            <h1 class="settings--heading">
-                Settings
-            </h1>
+    <h1 class="settings--heading">
+        Settings
+    </h1>
+    <img class="settings--heading--icon" src="./assets/settings/line.svg" alt="Settings icon">
 
-            <img class="settings--heading--icon" src="./assets/settings/line.svg" alt="Settings icon">
-
-        <div class="settings__layout">
-            <div class="settings">
-                <div class="settings__group settings__group--hoverable">
-                    <label class="settings__label"><img src="./assets/settings/style.svg" alt="Game themes icon">Game themes</label>
-                    <div class="settings__options">
-                        <label class="settings__option">
-                            <input type="radio" name="theme" value="code">
-                            <span class="settings__btn">Code vibes<img src="./assets/settings/arrow.svg" alt="Game themes icon"></span>
-                        </label>
-                        <label class="settings__option">
-                            <input type="radio" name="theme" value="gaming">
-                            <span class="settings__btn">Gaming<img src="./assets/settings/arrow.svg" alt="Game themes icon"></span>
-                        </label>
-                        <label class="settings__option">
-                            <input type="radio" name="theme" value="da-projects">
-                            <span class="settings__btn">DA Projects<img src="./assets/settings/arrow.svg" alt="Game themes icon"></span>
-                        </label>
-                        <label class="settings__option">
-                            <input type="radio" name="theme" value="food">
-                            <span class="settings__btn">Food<img src="./assets/settings/arrow.svg" alt="Game themes icon"></span>
-                        </label>
-                    </div>
-                </div>
-
-                <div class="settings__group settings__group--hoverable">
-                    <label class="settings__label">Choose player</label>
-                    <div class="settings__options">
-                        <label class="settings__option">
-                            <input type="radio" name="player" value="blue">
-                            <span class="settings__btn">Blue<img src="./assets/settings/arrow.svg" alt="Game themes icon"></span>
-                        </label>
-                        <label class="settings__option">
-                            <input type="radio" name="player" value="orange">
-                            <span class="settings__btn">Orange<img src="./assets/settings/arrow.svg" alt="Game themes icon"></span>
-                        </label>
-                    </div>
-                </div>
-
-                <div class="settings__group settings__group--hoverable">
-                    <label class="settings__label"><img src="./assets/settings/size.svg" alt="Board size icon">Board size</label>
-                    <div class="settings__options">
-                        <label class="settings__option">
-                            <input type="radio" name="size" value="16">
-                            <span class="settings__btn">16 cards<img src="./assets/settings/arrow.svg" alt="Game themes icon"></span>
-                        </label>
-                        <label class="settings__option">
-                            <input type="radio" name="size" value="24">
-                            <span class="settings__btn">24 cards<img src="./assets/settings/arrow.svg" alt="Game themes icon"></span>
-                        </label>
-                        <label class="settings__option">
-                            <input type="radio" name="size" value="36">
-                            <span class="settings__btn">36 cards<img src="./assets/settings/arrow.svg" alt="Game themes icon"></span>
-                        </label>
-                    </div>
+    <div class="settings__layout">
+        <div class="settings">
+            <div class="settings__group settings__group--hoverable">
+                <label class="settings__label"><img src="./assets/settings/style.svg" alt="Game themes icon">Game themes</label>
+                <div class="settings__options">
+                    <label class="settings__option">
+                        <!-- data-image hinzugefügt -->
+                        <input type="radio" name="theme" value="code" data-image="codevibes.jpg">
+                        <span class="settings__btn">Code vibes<img src="./assets/settings/arrow.svg" alt="Game themes icon"></span>
+                    </label>
+                    <label class="settings__option">
+                        <input type="radio" name="theme" value="gaming" data-image="games.jpg">
+                        <span class="settings__btn">Gaming<img src="./assets/settings/arrow.svg" alt="Game themes icon"></span>
+                    </label>
+                    <label class="settings__option">
+                        <input type="radio" name="theme" value="da-projects" data-image="daprojects.jpg">
+                        <span class="settings__btn">DA Projects<img src="./assets/settings/arrow.svg" alt="Game themes icon"></span>
+                    </label>
+                    <label class="settings__option">
+                        <input type="radio" name="theme" value="food" data-image="food.jpg">
+                        <span class="settings__btn">Food<img src="./assets/settings/arrow.svg" alt="Game themes icon"></span>
+                    </label>
                 </div>
             </div>
 
-            <aside class="summary">
-                <img src="./assets/settings/themes/codevibes.jpg" alt="Preview Image" class="summary__image">
-
-                <div class="summary__content">
-                    <div class="summary__item">
-                    <span class="summary__label">Game theme:</span>
-                    <span class="summary__value">Code vibes</span>
+            <div class="settings__group settings__group--hoverable">
+                <label class="settings__label"><img src="./assets/settings/player.svg" alt="Choose player icon">Choose player</label>
+                <div class="settings__options">
+                    <label class="settings__option">
+                        <input type="radio" name="player" value="blue">
+                        <span class="settings__btn">Blue<img src="./assets/settings/arrow.svg" alt="Game themes icon"></span>
+                    </label>
+                    <label class="settings__option">
+                        <input type="radio" name="player" value="orange">
+                        <span class="settings__btn">Orange<img src="./assets/settings/arrow.svg" alt="Game themes icon"></span>
+                    </label>
                 </div>
-
-                <div class="summary__item">
-                    <span class="summary__label">Player:</span>
-                    <span class="summary__value summary__value--placeholder">Not chosen</span>
-                </div>
-
-                <div class="summary__item">
-                    <span class="summary__label">Board size:</span>
-                    <span class="summary__value summary__value--placeholder">Not chosen</span>
-                </div>
-
-    
-                <button class="summary__start-btn" disabled>
-                    Start
-                </button>
             </div>
-        </aside>
+
+            <div class="settings__group settings__group--hoverable">
+                <label class="settings__label"><img src="./assets/settings/size.svg" alt="Board size icon">Board size</label>
+                <div class="settings__options">
+                    <label class="settings__option">
+                        <input type="radio" name="size" value="16">
+                        <span class="settings__btn">16 cards<img src="./assets/settings/arrow.svg" alt="Game themes icon"></span>
+                    </label>
+                    <label class="settings__option">
+                        <input type="radio" name="size" value="24">
+                        <span class="settings__btn">24 cards<img src="./assets/settings/arrow.svg" alt="Game themes icon"></span>
+                    </label>
+                    <label class="settings__option">
+                        <input type="radio" name="size" value="36">
+                        <span class="settings__btn">36 cards<img src="./assets/settings/arrow.svg" alt="Game themes icon"></span>
+                    </label>
+                </div>
+            </div>
         </div>
-        </section>
+
+        <aside class="summary">
+            <img id="preview-image" src="./assets/settings/themes/codevibes.jpg" alt="Preview Image" class="summary__image">
+
+<div class="summary__bar">
+  
+  <div id="summary-items" class="summary__items"></div>
+
+  <button id="start-btn" class="summary__start-btn" disabled>
+    <img src="./assets/settings/play.svg" alt="" class="summary__start-icon">
+    <span>Start</span>
+  </button>
+</div>
+        </aside>
+    </div>
+</section>
         
         <section id="board" class="board" style="display: none;">
-            <div>
-                <div>
-                    <span>Blue</span>
-                    <span>Orange</span>
-                </div>
+  <!-- Headerbereich für Scores, Current Player & Exit -->
+  <div class="board__header">
+    <div class="board__scores">
+      <span class="board__score board__score--blue">Blue <b id="score-blue">0</b></span>
+      <span class="board__score board__score--orange">Orange <b id="score-orange">0</b></span>
+    </div>
 
-                <div>
-                    Current Player
-                </div>
+    <div class="board__current-player">
+      Current Player: <span id="current-player-display" class="board__player-badge"></span>
+    </div>
 
-                <button>Exit game</button>
+    <button id="open-exit-modal-btn" class="board__exit-btn">
+      <img src="./assets/settings/exit.svg" alt="" />
+      Exit game
+    </button>
+  </div>
 
-            </div>
+  <!-- Beenden-Bestätigungsdialog (HTML Dialog Element) -->
+  <dialog id="exit-modal" class="board__modal">
+    <div class="board__modal-content">
+      <p class="board__modal-text">Are you sure you want to quit the game?</p>
+      <div class="board__modal-actions">
+        <button id="cancel-exit-btn" class="board__modal-btn board__modal-btn--cancel">Back to game</button>
+        <button id="confirm-exit-btn" class="board__modal-btn board__modal-btn--confirm">Exit game</button>
+      </div>
+    </div>
+  </dialog>
 
-            <dialog>
-                <div>
-                    Are you sure you want to quit the game? 
-                </div>
-
-                <div>
-                    <button>Back to game</button>
-                    <button>Exit game</button>
-                </div>
-            </dialog>
-
-            <div>
-                Gamefield 4x4 - 4x6 - 6x6
-            </div>
-        </section>
+  <!-- Dynamisches Spielfeld (Gamefield 4x4 - 4x6 - 6x6) -->
+  <div id="field" class="board__field"></div>
+</section>
 
         <section id="game-over" class="game-over" style="display: none;">
-            <h1>Game over</h1>
-            <h6>Final Score</h6>
-            <div>
-                Blue / Orange 
-            </div>
-        </section>
+  <div class="game-over__content">
+    <img id="game-over-img" src="" alt="Game Over" class="game-over__img" />
+    <h2 class="game-over__title">Final Score</h2>
+    <div class="game-over__scores">
+      <span class="game-over__score game-over__score--blue">Blue: <strong id="final-score-blue">0</strong></span>
+      <span class="game-over__divider">/</span>
+      <span class="game-over__score game-over__score--orange">Orange: <strong id="final-score-orange">0</strong></span>
+    </div>
+  </div>
+</section>
 
-        <section id="result" class="result" style="display: none;">
+       <section id="result" class="result" style="display: none;">
+  <div class="result__content">
+    <h2 id="result-subtitle" class="result__subtitle">The winner is</h2>
+    <h1 id="result-title" class="result__title">Blue Player</h1>
+    
+    <img id="result-img" src="" alt="Result" class="result__img" />
 
-            // If winner
-            <img Konfetti banner>
-            <h2>The winner is</h2>
-            <h1>Color Player</h1>
-            <img Player Icon>
-
-            // If draw
-            <h2>It's a</h2>
-            <h1>DRAW</h1>
-            <img DRAW Icon>
-
-            <button>
-                Home / Back to start
-            </button>
-        </section>
+    <button id="restart-btn" class="result__btn">
+      Back to start
+    </button>
+  </div>
+</section>
 
         <section id="field" style="display: none;">
             <button class="card">
