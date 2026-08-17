@@ -1,0 +1,169 @@
+:root {
+  /* Board & Typo */
+  --board-bg: #303131;
+  --board-font: 'redrose', sans-serif;
+  --board-text-color: #ffffff;
+  
+  /* Scores & Current Player */
+  --scores-bg: #424242;
+  --score-blue-color: #2BB1FF;
+  --score-orange-color: #F58E39;
+  
+  /* Exit Button (Board) */
+  --exit-btn-bg: #86E9D633;
+  --exit-btn-text-color: #FFFFFF;
+  --exit-btn-border-color: #86E9D6;
+  --exit-btn-hover-bg: #86E9D655;
+  --exit-btn-hover-text-color: #FFFFFF;
+  --exit-btn-hover-border-color: #86E9D6;
+  
+  /* Popup / Modal Modal */
+  --modal-bg: #FFFFFF;
+  --modal-text-color: #303131;
+  --modal-border-color: transparent;
+  --modal-backdrop: rgba(0, 0, 0, 0.7);
+
+  /* Modal Cancel Button */
+  --modal-btn-cancel-bg: #66CFBC;
+  --modal-btn-cancel-text: #FFFFFF;
+  --modal-btn-cancel-border: transparent;
+
+  /* Modal Confirm Button */
+  --modal-btn-confirm-bg: #86E9D624;
+  --modal-btn-confirm-text: #303131;
+  --modal-btn-confirm-border: #66CFBC;
+  
+  /* Result Page */
+  --result-bg: #303131;
+  --result-text-color: #FFFFFF;
+  --result-subtitle-color: #aaa;
+  --restart-btn-bg: #86E9D633;
+  --restart-btn-text: #FFFFFF;
+  --restart-btn-border: 1px solid #86E9D6;
+}
+
+[data-theme="gaming"] {
+  --board-bg: #294F60;
+  --board-font: 'almarai', sans-serif;
+  --board-text-color: #FFFFFF;
+  
+  --scores-bg: #FFFFFF;
+  --score-blue-color: #097FC5;
+  --score-orange-color: #EA6900;
+  
+  /* Exit Button */
+  --exit-btn-bg: #F0F6F9;
+  --exit-btn-text-color: #294F60;
+  --exit-btn-border-color: #097FC5;
+  --exit-btn-hover-bg: #FFFFFF;
+  --exit-btn-hover-text-color: #097FC5;
+  --exit-btn-hover-border-color: #097FC5;
+  
+  /* Modal */
+  --modal-bg: #2a083b;
+  --modal-text-color: #FFFFFF;
+  --modal-border-color: #ff007f;
+  --modal-backdrop: rgba(0, 0, 0, 0.8);
+
+  /* Modal Cancel Button */
+  --modal-btn-cancel-bg: #4a1566;
+  --modal-btn-cancel-text: #FFFFFF;
+  --modal-btn-cancel-border: #ff007f;
+
+  /* Modal Confirm Button */
+  --modal-btn-confirm-bg: #ff0055;
+  --modal-btn-confirm-text: #FFFFFF;
+  --modal-btn-confirm-border: transparent;
+  
+  /* Result Page */
+  --result-bg: #294F60;
+  --result-text-color: #FFFFFF;
+  --result-subtitle-color: #00ffcc;
+  --restart-btn-bg: #00ffcc;
+  --restart-btn-text: #1a0826;
+  --restart-btn-border: none;
+}
+
+[data-theme="da-projects"] {
+  --board-bg: #0f172a;
+  --board-font: 'redrose', sans-serif;
+  --board-text-color: #f8fafc;
+
+  --scores-bg: #1e293b;
+  --score-blue-color: #60a5fa;
+  --score-orange-color: #fb923c;
+  
+  /* Exit Button */
+  --exit-btn-bg: #334155;
+  --exit-btn-text-color: #f8fafc;
+  --exit-btn-border-color: #475569;
+  --exit-btn-hover-bg: #475569;
+  --exit-btn-hover-text-color: #ffffff;
+  --exit-btn-hover-border-color: #60a5fa;
+  
+  /* Modal */
+  --modal-bg: #1e293b;
+  --modal-text-color: #f8fafc;
+  --modal-border-color: #334155;
+  --modal-backdrop: rgba(15, 23, 42, 0.8);
+
+  /* Modal Cancel Button */
+  --modal-btn-cancel-bg: #475569;
+  --modal-btn-cancel-text: #ffffff;
+  --modal-btn-cancel-border: transparent;
+
+  /* Modal Confirm Button */
+  --modal-btn-confirm-bg: #ef4444;
+  --modal-btn-confirm-text: #ffffff;
+  --modal-btn-confirm-border: transparent;
+  
+  /* Result Page */
+  --result-bg: #0f172a;
+  --result-text-color: #f8fafc;
+  --result-subtitle-color: #94a3b8;
+  --restart-btn-bg: #38bdf8;
+  --restart-btn-text: #0f172a;
+  --restart-btn-border: none;
+}
+
+[data-theme="food"] {
+  --board-bg: #2d1810;
+  --board-font: 'almarai', sans-serif;
+  --board-text-color: #ffffff;
+
+  --scores-bg: #422517;
+  --score-blue-color: #70e000;
+  --score-orange-color: #ff9e00;
+  
+  /* Exit Button */
+  --exit-btn-bg: #ff9e00;
+  --exit-btn-text-color: #2d1810;
+  --exit-btn-border-color: #ff9e00;
+  --exit-btn-hover-bg: #ffb703;
+  --exit-btn-hover-text-color: #2d1810;
+  --exit-btn-hover-border-color: #ffb703;
+  
+  /* Modal */
+  --modal-bg: #3a2016;
+  --modal-text-color: #ffffff;
+  --modal-border-color: #ff9e00;
+  --modal-backdrop: rgba(0, 0, 0, 0.75);
+
+  /* Modal Cancel Button */
+  --modal-btn-cancel-bg: #573325;
+  --modal-btn-cancel-text: #ffffff;
+  --modal-btn-cancel-border: 1px solid #70e000;
+
+  /* Modal Confirm Button */
+  --modal-btn-confirm-bg: #d90429;
+  --modal-btn-confirm-text: #ffffff;
+  --modal-btn-confirm-border: transparent;
+  
+  /* Result Page */
+  --result-bg: #2d1810;
+  --result-text-color: #ffffff;
+  --result-subtitle-color: #ff9e00;
+  --restart-btn-bg: #70e000;
+  --restart-btn-text: #2d1810;
+  --restart-btn-border: none;
+}

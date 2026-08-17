@@ -14,13 +14,17 @@
     background-color: white;
     padding-left: 10.625rem;
     padding-right: 10.625rem;
-  }
+    padding-top: 3.375rem;
+    min-height: 100vh; /* NEU: Füllt den gesamten Bildschirminhalt aus */
+    box-sizing: border-box;
+    }
 
   &--heading {
     font-family: 'redrose', sans-serif;
     color: $color-black;
     font-size: 3.375rem;
     font-weight: 700;
+    margin-top: 0;
 
     &--icon {
       position: relative;

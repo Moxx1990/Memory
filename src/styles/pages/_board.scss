@@ -1,13 +1,16 @@
 @use '../abstracts/variables.scss' as *;
+@use '../abstracts/themes.scss' as *;
 
 .board {
-  background-color: #303131;
+  background-color: var(--board-bg, #303131);
+  font-family: var(--board-font, 'redrose', sans-serif);
+  color: var(--board-text-color, $color-white);
   min-height: 100vh;
   padding: 2.5rem 10.625rem;
-  color: $color-white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
 
   &__header {
     width: 100%;
@@ -20,7 +23,7 @@
   &__scores {
     display: flex;
     gap: 1.5rem;
-    background-color: #242525;
+    background-color: var(--scores-bg, #242525);
     padding: 0.625rem 1.25rem;
     border-radius: $border-radius-sm;
   }
@@ -30,11 +33,11 @@
     font-weight: bold;
 
     &--blue {
-      color: #38b6ff;
+      color: var(--score-blue-color, #38b6ff);
     }
 
     &--orange {
-      color: #ff914d;
+      color: var(--score-orange-color, #ff914d);
     }
   }
 
@@ -43,6 +46,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    color: var(--board-text-color, $color-white);
   }
 
   &__player-badge {
@@ -52,11 +56,11 @@
     display: inline-block;
 
     &--blue {
-      background-color: #38b6ff;
+      background-color: var(--score-blue-color, #38b6ff);
     }
 
     &--orange {
-      background-color: #ff914d;
+      background-color: var(--score-orange-color, #ff914d);
     }
   }
 
@@ -64,9 +68,10 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: $color-white;
+    background-color: var(--exit-btn-bg, transparent);
+    border: 1px solid var(--exit-btn-border-color, rgba(255, 255, 255, 0.2));
+    color: var(--exit-btn-text-color, $color-white);
+    font-family: inherit;
     padding: 0.5rem 1rem;
     border-radius: $border-radius-sm;
     cursor: pointer;
@@ -74,7 +79,9 @@
     transition: $transition-fast;
 
     &:hover {
-      background-color: rgba(255, 255, 255, 0.1);
+      background-color: var(--exit-btn-hover-bg, rgba(255, 255, 255, 0.1));
+      color: var(--exit-btn-hover-text-color, var(--exit-btn-text-color, $color-white));
+      border-color: var(--exit-btn-hover-border-color, var(--exit-btn-border-color));
     }
   }
 
@@ -99,15 +106,16 @@
   }
 
   &__modal {
-    border: none;
+    border: 1px solid var(--modal-border-color, transparent);
     border-radius: $border-radius-md;
-    background-color: #242525;
-    color: $color-white;
+    background-color: var(--modal-bg, #242525);
+    color: var(--modal-text-color, $color-white);
+    font-family: var(--board-font, inherit);
     padding: 2rem;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 
     &::backdrop {
-      background: rgba(0, 0, 0, 0.7);
+      background: var(--modal-backdrop, rgba(0, 0, 0, 0.7));
     }
 
     &-content {
@@ -115,6 +123,13 @@
       flex-direction: column;
       gap: 1.5rem;
       align-items: center;
+    }
+
+    &-text {
+      margin: 0;
+      font-size: 1.25rem;
+      text-align: center;
+      color: var(--modal-text-color, $color-white);
     }
 
     &-actions {
@@ -125,18 +140,29 @@
     &-btn {
       padding: 0.5rem 1.25rem;
       border-radius: $border-radius-sm;
-      border: none;
+      font-family: inherit;
       font-weight: bold;
       cursor: pointer;
+      transition: $transition-fast;
 
       &--cancel {
-        background-color: #444;
-        color: $color-white;
+        background-color: var(--modal-btn-cancel-bg, #444);
+        color: var(--modal-btn-cancel-text, $color-white);
+        border: 1px solid var(--modal-btn-cancel-border, transparent);
+
+        &:hover {
+          filter: brightness(1.1);
+        }
       }
 
       &--confirm {
-        background-color: #ff4d4d;
-        color: $color-white;
+        background-color: var(--modal-btn-confirm-bg, #ff4d4d);
+        color: var(--modal-btn-confirm-text, $color-white);
+        border: 1px solid var(--modal-btn-confirm-border, transparent);
+
+        &:hover {
+          filter: brightness(0.9);
+        }
       }
     }
   }

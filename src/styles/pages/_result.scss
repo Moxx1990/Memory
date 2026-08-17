@@ -1,14 +1,17 @@
 @use '../abstracts/variables.scss' as *;
+@use '../abstracts/themes.scss' as *;
 
 .result {
-  background-color: #303131;
+  background-color: var(--result-bg, var(--board-bg, #303131));
+  font-family: var(--board-font, 'redrose', sans-serif);
   min-height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: var(--result-text-color, #ffffff);
   text-align: center;
+  transition: background-color 0.3s ease;
 
   &__content {
     display: flex;
@@ -20,7 +23,7 @@
   &__subtitle {
     font-size: 1.5rem;
     font-weight: normal;
-    color: #aaa;
+    color: var(--result-subtitle-color, #aaa);
     margin: 0;
   }
 
@@ -37,18 +40,20 @@
   }
 
   &__btn {
-    background-color: #38b6ff;
-    color: #fff;
-    border: none;
+    background-color: var(--restart-btn-bg, #38b6ff);
+    color: var(--restart-btn-text, #ffffff);
+    font-family: inherit;
+    border: var(--restart-btn-border, none);
     padding: 0.8rem 2rem;
     font-size: 1.1rem;
     font-weight: bold;
     border-radius: 0.5rem;
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    transition: transform 0.2s ease, filter 0.2s ease, background-color 0.2s ease;
 
     &:hover {
-      background-color: lighten(#38b6ff, 10%);
+      filter: brightness(1.1);
+      transform: scale(1.03);
     }
   }
 }

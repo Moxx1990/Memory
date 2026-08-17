@@ -16,37 +16,30 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: #303131; 
 }
 
-.card {
-    height: 100px;
-    aspect-ratio: 1 / 1;
-    background-color: transparent;
-    border: none;
-
-    &__inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        transform-style: preserve-3d;
-        transition: all 300ms ease-in-out;
-    }
-
-    &__face {
-        position: absolute;
-        inset: 0;
-        background-color: black;
-        backface-visibility: hidden;
-
-        &--back {
-            transform: rotateY(180deg);
-            background-color: red;
-        }
-    }
-
-    &.is-flipped .card__inner{
-        transform: rotateY(180deg);
-    }
+#intro,
+#settings,
+#board,
+#game-over,
+#result {
+  display: none !important;
 }
 
+#intro.is-active {
+  display: flex !important;
+}
+
+#settings.is-active {
+  display: block !important;
+}
+
+#board.is-active,
+#game-over.is-active,
+#result.is-active {
+  display: flex !important;
+}
