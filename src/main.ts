@@ -30,9 +30,6 @@ function init(): void {
   initResultEvents();
 }
 
-/**
- * Steuert die Anzeige der Sektionen direkt über deren verlangten Display-Typ
- */
 function showSection(activeId: 'intro' | 'settings' | 'board' | 'game-over' | 'result'): void {
   const allSections: Record<string, string> = {
     'intro': 'flex',
@@ -113,6 +110,17 @@ function initThemePreview(): void {
       }
     });
   });
+}
+
+function updatePlayerIcons(themeName: string): void {
+  const blueIcon = document.getElementById('player-icon-blue') as HTMLImageElement | null;
+  const orangeIcon = document.getElementById('player-icon-orange') as HTMLImageElement | null;
+
+  if (blueIcon && orangeIcon) {
+    const folderName = getThemeFolderName(themeName);
+    blueIcon.src = `./assets/themes/${folderName}/blueplayer.svg`;
+    orangeIcon.src = `./assets/themes/${folderName}/orangeplayer.svg`;
+  }
 }
 
 function initSummarySync(): void {
@@ -207,8 +215,9 @@ function getSelectedConfig(): GameConfig | null {
 function buildBoard(config: GameConfig): void {
   const fieldRef = document.getElementById('field');
   if (!fieldRef) return;
-  document.body.setAttribute('data-theme', config.theme);
-  
+  document.documentElement.setAttribute('data-theme', config.theme);
+  updatePlayerIcons(config.theme);
+
   currentConfig = config;
   scores = { blue: 0, orange: 0 };
   currentPlayer = (config.player as 'blue' | 'orange') || 'blue';
@@ -362,11 +371,17 @@ function updateUI(): void {
   const scoreBlue = document.getElementById('score-blue');
   const scoreOrange = document.getElementById('score-orange');
   const playerDisplay = document.getElementById('current-player-display');
+  const playerImage = document.getElementById('current-player-img') as HTMLImageElement | null;
 
   if (scoreBlue) scoreBlue.textContent = scores.blue.toString();
   if (scoreOrange) scoreOrange.textContent = scores.orange.toString();
 
   if (playerDisplay) {
     playerDisplay.className = `board__player-badge board__player-badge--${currentPlayer}`;
+  }
+  
+  if (playerImage && currentConfig) {
+    const themeFolder = getThemeFolderName(currentConfig.theme);
+    playerImage.src = `./assets/themes/${themeFolder}/${currentPlayer}player.svg`;
   }
 }

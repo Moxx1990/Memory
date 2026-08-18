@@ -1,3 +1,4 @@
+/* Standard-Werte (Fallback / Default Theme "code") */
 :root {
   /* Board & Typo */
   --board-bg: #303131;
@@ -5,18 +6,24 @@
   --board-text-color: #ffffff;
   
   /* Scores & Current Player */
-  --scores-bg: #424242;
+  --scores-bg: #86E9D633;
   --score-blue-color: #2BB1FF;
   --score-orange-color: #F58E39;
   
+  /* Board Header */
+  --header-bg: transparent;
+  --header-border-radius: 10px;
+
   /* Exit Button (Board) */
   --exit-btn-bg: #86E9D633;
   --exit-btn-text-color: #FFFFFF;
   --exit-btn-border-color: #86E9D6;
-  --exit-btn-hover-bg: #86E9D655;
+  --exit-btn-icon-color: #FFFFFF;
+  --exit-btn-hover-bg: #86E9D642;
   --exit-btn-hover-text-color: #FFFFFF;
   --exit-btn-hover-border-color: #86E9D6;
-  
+  --exit-btn-hover-icon-color: #FFFFFF;
+
   /* Popup / Modal Modal */
   --modal-bg: #FFFFFF;
   --modal-text-color: #303131;
@@ -26,12 +33,18 @@
   /* Modal Cancel Button */
   --modal-btn-cancel-bg: #66CFBC;
   --modal-btn-cancel-text: #FFFFFF;
-  --modal-btn-cancel-border: transparent;
+  --modal-btn-cancel-border: #3ABCA4;
+  --modal-btn-cancel-hover-bg: #52BFAC;
+  --modal-btn-cancel-hover-text: #FFFFFF;
+  --modal-btn-cancel-hover-border: #3ABCA4;
 
   /* Modal Confirm Button */
   --modal-btn-confirm-bg: #86E9D624;
-  --modal-btn-confirm-text: #303131;
+  --modal-btn-confirm-text: #4DD5BC;
   --modal-btn-confirm-border: #66CFBC;
+  --modal-btn-confirm-hover-bg: #86E9D642;
+  --modal-btn-confirm-hover-text: #3ABCA4;
+  --modal-btn-confirm-hover-border: #52BFAC;
   
   /* Result Page */
   --result-bg: #303131;
@@ -42,38 +55,50 @@
   --restart-btn-border: 1px solid #86E9D6;
 }
 
+/* --- THEME 1: Gaming --- */
 [data-theme="gaming"] {
-  --board-bg: #294F60;
+  --board-bg: #1F3D4B;
   --board-font: 'almarai', sans-serif;
   --board-text-color: #FFFFFF;
   
   --scores-bg: #FFFFFF;
   --score-blue-color: #097FC5;
   --score-orange-color: #EA6900;
-  
+
+  /* Board Header */
+  --header-bg: #FD96C933;
+
   /* Exit Button */
-  --exit-btn-bg: #F0F6F9;
-  --exit-btn-text-color: #294F60;
-  --exit-btn-border-color: #097FC5;
-  --exit-btn-hover-bg: #FFFFFF;
-  --exit-btn-hover-text-color: #097FC5;
-  --exit-btn-hover-border-color: #097FC5;
+  --exit-btn-bg: #294F60;
+  --exit-btn-text-color: #FFFFFF;
+  --exit-btn-border-color: #E71C4F;
+  --exit-btn-icon-color: #E71C4F;
+  --exit-btn-hover-bg: #ED1B7624;
+  --exit-btn-hover-text-color: #FFFFFF;
+  --exit-btn-hover-border-color: #E71C4F;
+  --exit-btn-hover-icon-color: #E71C4F;
   
   /* Modal */
-  --modal-bg: #2a083b;
-  --modal-text-color: #FFFFFF;
-  --modal-border-color: #ff007f;
+  --modal-bg: #F0F6F9;
+  --modal-text-color: #294F60;
+  --modal-border-color: transparent;
   --modal-backdrop: rgba(0, 0, 0, 0.8);
 
   /* Modal Cancel Button */
-  --modal-btn-cancel-bg: #4a1566;
+  --modal-btn-cancel-bg: #ED1B76;
   --modal-btn-cancel-text: #FFFFFF;
-  --modal-btn-cancel-border: #ff007f;
+  --modal-btn-cancel-border: #E71C4F;
+  --modal-btn-cancel-hover-bg: #C8125E;
+  --modal-btn-cancel-hover-text: #FFFFFF;
+  --modal-btn-cancel-hover-border: #C8125E;
 
   /* Modal Confirm Button */
-  --modal-btn-confirm-bg: #ff0055;
-  --modal-btn-confirm-text: #FFFFFF;
-  --modal-btn-confirm-border: transparent;
+  --modal-btn-confirm-bg: #ED1B7614;
+  --modal-btn-confirm-text: #ED1B76;
+  --modal-btn-confirm-border: #E71C4F;
+  --modal-btn-confirm-hover-bg: #ED1B7633;
+  --modal-btn-confirm-hover-text: #C8125E;
+  --modal-btn-confirm-hover-border: #C8125E;
   
   /* Result Page */
   --result-bg: #294F60;
@@ -84,38 +109,50 @@
   --restart-btn-border: none;
 }
 
+/* --- THEME 2: DA Projects --- */
 [data-theme="da-projects"] {
-  --board-bg: #0f172a;
+  --board-bg: #1e293b;
   --board-font: 'redrose', sans-serif;
   --board-text-color: #f8fafc;
 
-  --scores-bg: #1e293b;
+  --scores-bg: #FFFFFF;
   --score-blue-color: #60a5fa;
   --score-orange-color: #fb923c;
+
+  /* Board Header */
+  --header-bg: #F0F3F4;
   
   /* Exit Button */
-  --exit-btn-bg: #334155;
-  --exit-btn-text-color: #f8fafc;
-  --exit-btn-border-color: #475569;
+  --exit-btn-bg: #BFE5F2;
+  --exit-btn-text-color: #1E7594;
+  --exit-btn-border-color: transparent;
+  --exit-btn-icon-color: #1E7594;
   --exit-btn-hover-bg: #475569;
   --exit-btn-hover-text-color: #ffffff;
   --exit-btn-hover-border-color: #60a5fa;
+  --exit-btn-hover-icon-color: #ffffff;
   
   /* Modal */
-  --modal-bg: #1e293b;
-  --modal-text-color: #f8fafc;
-  --modal-border-color: #334155;
+  --modal-bg: #F0F6F9;
+  --modal-text-color: #294F60;
+  --modal-border-color: transparent;
   --modal-backdrop: rgba(15, 23, 42, 0.8);
 
   /* Modal Cancel Button */
-  --modal-btn-cancel-bg: #475569;
-  --modal-btn-cancel-text: #ffffff;
+  --modal-btn-cancel-bg: #BFE5F2;
+  --modal-btn-cancel-text: #1E7594;
   --modal-btn-cancel-border: transparent;
+  --modal-btn-cancel-hover-bg: #A3D7E8;
+  --modal-btn-cancel-hover-text: #14556C;
+  --modal-btn-cancel-hover-border: transparent;
 
   /* Modal Confirm Button */
-  --modal-btn-confirm-bg: #ef4444;
+  --modal-btn-confirm-bg: #FD8A81;
   --modal-btn-confirm-text: #ffffff;
   --modal-btn-confirm-border: transparent;
+  --modal-btn-confirm-hover-bg: #E86F66;
+  --modal-btn-confirm-hover-text: #ffffff;
+  --modal-btn-confirm-hover-border: transparent;
   
   /* Result Page */
   --result-bg: #0f172a;
@@ -126,38 +163,50 @@
   --restart-btn-border: none;
 }
 
+/* --- THEME 3: Food --- */
 [data-theme="food"] {
-  --board-bg: #2d1810;
+  --board-bg: #ffffff;
   --board-font: 'almarai', sans-serif;
-  --board-text-color: #ffffff;
+  --board-text-color: #A45212;
 
-  --scores-bg: #422517;
-  --score-blue-color: #70e000;
-  --score-orange-color: #ff9e00;
+  --scores-bg: #FFFFFF;
+  --score-blue-color: #097FC5;
+  --score-orange-color: #EA6900;
+
+  /* Board Header */
+  --header-bg: #F0E5D9;
   
   /* Exit Button */
-  --exit-btn-bg: #ff9e00;
-  --exit-btn-text-color: #2d1810;
-  --exit-btn-border-color: #ff9e00;
+  --exit-btn-bg: #FFF9F2;
+  --exit-btn-text-color: #F3832D;
+  --exit-btn-border-color: #F3832D;
+  --exit-btn-icon-color: #F3832D;
   --exit-btn-hover-bg: #ffb703;
   --exit-btn-hover-text-color: #2d1810;
   --exit-btn-hover-border-color: #ffb703;
+  --exit-btn-hover-icon-color: #2d1810;
   
   /* Modal */
-  --modal-bg: #3a2016;
-  --modal-text-color: #ffffff;
-  --modal-border-color: #ff9e00;
+  --modal-bg: #F6F6F6;
+  --modal-text-color: #A45212;
+  --modal-border-color: transparent;
   --modal-backdrop: rgba(0, 0, 0, 0.75);
 
   /* Modal Cancel Button */
-  --modal-btn-cancel-bg: #573325;
+  --modal-btn-cancel-bg: #FFAB3E;
   --modal-btn-cancel-text: #ffffff;
-  --modal-btn-cancel-border: 1px solid #70e000;
+  --modal-btn-cancel-border: #F3832D;
+  --modal-btn-cancel-hover-bg: #E89528;
+  --modal-btn-cancel-hover-text: #ffffff;
+  --modal-btn-cancel-hover-border: #D8721C;
 
   /* Modal Confirm Button */
-  --modal-btn-confirm-bg: #d90429;
-  --modal-btn-confirm-text: #ffffff;
-  --modal-btn-confirm-border: transparent;
+  --modal-btn-confirm-bg: #FFF9F2;
+  --modal-btn-confirm-text: #F3832D;
+  --modal-btn-confirm-border: #F3832D;
+  --modal-btn-confirm-hover-bg: #F0E5D9;
+  --modal-btn-confirm-hover-text: #D8721C;
+  --modal-btn-confirm-hover-border: #D8721C;
   
   /* Result Page */
   --result-bg: #2d1810;

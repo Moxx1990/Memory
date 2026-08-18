@@ -16,11 +16,11 @@
                     <h2 class="intro__content--subheading">It's play time.</h2>
                     <h1 class="intro__content--heading">Ready to play?</h1>
 
-                   <button type="button" class="intro--button">
-    <img class="intro--button--icon" src="./assets/start/controller.svg" alt="Play button">
-    Play
-    <img class="intro--button--arrow" src="./assets/start/arrow.svg" alt="Play button">
-</button>
+                    <button type="button" class="intro--button">
+                        <img class="intro--button--icon" src="./assets/start/controller.svg" alt="Play button">
+                        Play
+                        <img class="intro--button--arrow" src="./assets/start/arrow.svg" alt="Play button">
+                    </button>
                 </div>
                 <img src="./assets/start/controllerbackground.svg" class="intro__background--image" alt="Memory game">
             </div>
@@ -104,18 +104,27 @@
         <section id="board" class="board">
             <div class="board__header">
                 <div class="board__scores">
-                    <span class="board__score board__score--blue">Blue <b id="score-blue">0</b></span>
-                    <span class="board__score board__score--orange">Orange <b id="score-orange">0</b></span>
-                </div>
+    <span class="board__score board__score--blue">
+        <img id="player-icon-blue" src="./assets/themes/codevibes/blueplayer.svg" alt="Blue player" class="board__score-icon">
+        Blue <b id="score-blue">0</b>
+    </span>
+    <span class="board__score board__score--orange">
+        <img id="player-icon-orange" src="./assets/themes/codevibes/orangeplayer.svg" alt="Orange player" class="board__score-icon">
+        Orange <b id="score-orange">0</b>
+    </span>
+</div>
 
                 <div class="board__current-player">
-                    Current Player: <span id="current-player-display" class="board__player-badge"></span>
-                </div>
+  Current Player: 
+  <span id="current-player-display" class="board__player-badge">
+    <img id="current-player-img" src="" alt="Current Player" />
+  </span>
+</div>
 
                 <button id="open-exit-modal-btn" class="board__exit-btn">
-                    <img src="./assets/settings/exit.svg" alt="" />
-                    Exit game
-                </button>
+    <span class="board__exit-icon"></span>
+    Exit game
+</button>
             </div>
 
             <dialog id="exit-modal" class="board__modal">
