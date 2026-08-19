@@ -4,11 +4,14 @@
   --board-bg: #303131;
   --board-font: 'redrose', sans-serif;
   --board-text-color: #ffffff;
+  --btn-border-radius: 0px;
   
   /* Scores & Current Player */
   --scores-bg: #86E9D633;
   --score-blue-color: #2BB1FF;
   --score-orange-color: #F58E39;
+  --scores-border-radius: 0px;
+  --current-player-text-color: #ffffff;
   
   /* Board Header */
   --header-bg: transparent;
@@ -53,6 +56,13 @@
   --restart-btn-bg: #86E9D633;
   --restart-btn-text: #FFFFFF;
   --restart-btn-border: 1px solid #86E9D6;
+
+  /* Game Over Page */
+  --game-over-bg: #303131;
+  --game-over-title-color: #86E9D6;
+  --game-over-subtitle-color: #aaa;
+  --game-over-scores-bg: var(--scores-bg, #86E9D633);
+  --game-over-scores-border-radius: var(--scores-border-radius, 8px);
 }
 
 /* --- THEME 1: Gaming --- */
@@ -60,10 +70,13 @@
   --board-bg: #1F3D4B;
   --board-font: 'almarai', sans-serif;
   --board-text-color: #FFFFFF;
+  --btn-border-radius: 10px;
   
   --scores-bg: #FFFFFF;
   --score-blue-color: #097FC5;
   --score-orange-color: #EA6900;
+  --scores-border-radius: 10px;
+  --current-player-text-color: #ffffff;
 
   /* Board Header */
   --header-bg: #FD96C933;
@@ -72,7 +85,7 @@
   --exit-btn-bg: #294F60;
   --exit-btn-text-color: #FFFFFF;
   --exit-btn-border-color: #E71C4F;
-  --exit-btn-icon-color: #E71C4F;
+  --exit-btn-icon-color: #FFFFFF;
   --exit-btn-hover-bg: #ED1B7624;
   --exit-btn-hover-text-color: #FFFFFF;
   --exit-btn-hover-border-color: #E71C4F;
@@ -88,8 +101,8 @@
   --modal-btn-cancel-bg: #ED1B76;
   --modal-btn-cancel-text: #FFFFFF;
   --modal-btn-cancel-border: #E71C4F;
-  --modal-btn-cancel-hover-bg: #C8125E;
-  --modal-btn-cancel-hover-text: #FFFFFF;
+  --modal-btn-cancel-hover-bg: #FFFFFF;
+  --modal-btn-cancel-hover-text: #C8125E;
   --modal-btn-cancel-hover-border: #C8125E;
 
   /* Modal Confirm Button */
@@ -107,17 +120,26 @@
   --restart-btn-bg: #00ffcc;
   --restart-btn-text: #1a0826;
   --restart-btn-border: none;
+
+  --game-over-bg: #1F3D4B;
+  --game-over-title-color: #00FFCC;
+  --game-over-subtitle-color: #FFFFFF;
+  --game-over-scores-bg: var(--scores-bg, #FFFFFF);
+  --game-over-scores-border-radius: var(--scores-border-radius, 8px);
 }
 
 /* --- THEME 2: DA Projects --- */
 [data-theme="da-projects"] {
-  --board-bg: #1e293b;
+  --board-bg: #FFFFFF;
   --board-font: 'redrose', sans-serif;
   --board-text-color: #f8fafc;
+  --btn-border-radius: 8px;
 
   --scores-bg: #FFFFFF;
   --score-blue-color: #60a5fa;
   --score-orange-color: #fb923c;
+  --scores-border-radius: 8px;
+  --current-player-text-color: #1E7594;
 
   /* Board Header */
   --header-bg: #F0F3F4;
@@ -127,7 +149,7 @@
   --exit-btn-text-color: #1E7594;
   --exit-btn-border-color: transparent;
   --exit-btn-icon-color: #1E7594;
-  --exit-btn-hover-bg: #475569;
+  --exit-btn-hover-bg: #1E7594;
   --exit-btn-hover-text-color: #ffffff;
   --exit-btn-hover-border-color: #60a5fa;
   --exit-btn-hover-icon-color: #ffffff;
@@ -142,15 +164,15 @@
   --modal-btn-cancel-bg: #BFE5F2;
   --modal-btn-cancel-text: #1E7594;
   --modal-btn-cancel-border: transparent;
-  --modal-btn-cancel-hover-bg: #A3D7E8;
-  --modal-btn-cancel-hover-text: #14556C;
+  --modal-btn-cancel-hover-bg: #1E7594;
+  --modal-btn-cancel-hover-text: #ffffff;
   --modal-btn-cancel-hover-border: transparent;
 
   /* Modal Confirm Button */
   --modal-btn-confirm-bg: #FD8A81;
   --modal-btn-confirm-text: #ffffff;
   --modal-btn-confirm-border: transparent;
-  --modal-btn-confirm-hover-bg: #E86F66;
+  --modal-btn-confirm-hover-bg: #ED5B50;
   --modal-btn-confirm-hover-text: #ffffff;
   --modal-btn-confirm-hover-border: transparent;
   
@@ -161,6 +183,12 @@
   --restart-btn-bg: #38bdf8;
   --restart-btn-text: #0f172a;
   --restart-btn-border: none;
+
+  --game-over-bg: #0f172a;
+  --game-over-title-color: #38bdf8;
+  --game-over-subtitle-color: #94a3b8;
+  --game-over-scores-bg: var(--scores-bg, #FFFFFF);
+  --game-over-scores-border-radius: var(--scores-border-radius, 8px);
 }
 
 /* --- THEME 3: Food --- */
@@ -168,10 +196,13 @@
   --board-bg: #ffffff;
   --board-font: 'almarai', sans-serif;
   --board-text-color: #A45212;
+  --btn-border-radius: 8px;
 
   --scores-bg: #FFFFFF;
   --score-blue-color: #097FC5;
   --score-orange-color: #EA6900;
+  --scores-border-radius: 8px;
+  --current-player-text-color: #A45212;
 
   /* Board Header */
   --header-bg: #F0E5D9;
@@ -181,10 +212,10 @@
   --exit-btn-text-color: #F3832D;
   --exit-btn-border-color: #F3832D;
   --exit-btn-icon-color: #F3832D;
-  --exit-btn-hover-bg: #ffb703;
-  --exit-btn-hover-text-color: #2d1810;
-  --exit-btn-hover-border-color: #ffb703;
-  --exit-btn-hover-icon-color: #2d1810;
+  --exit-btn-hover-bg: #F3832D;
+  --exit-btn-hover-text-color: #FFFFFF;
+  --exit-btn-hover-border-color: transparent;
+  --exit-btn-hover-icon-color: #FFFFFF;
   
   /* Modal */
   --modal-bg: #F6F6F6;
@@ -196,17 +227,17 @@
   --modal-btn-cancel-bg: #FFAB3E;
   --modal-btn-cancel-text: #ffffff;
   --modal-btn-cancel-border: #F3832D;
-  --modal-btn-cancel-hover-bg: #E89528;
+  --modal-btn-cancel-hover-bg: #F3832D;
   --modal-btn-cancel-hover-text: #ffffff;
-  --modal-btn-cancel-hover-border: #D8721C;
+  --modal-btn-cancel-hover-border: #F3832D;
 
   /* Modal Confirm Button */
   --modal-btn-confirm-bg: #FFF9F2;
   --modal-btn-confirm-text: #F3832D;
   --modal-btn-confirm-border: #F3832D;
-  --modal-btn-confirm-hover-bg: #F0E5D9;
-  --modal-btn-confirm-hover-text: #D8721C;
-  --modal-btn-confirm-hover-border: #D8721C;
+  --modal-btn-confirm-hover-bg: #F3832D;
+  --modal-btn-confirm-hover-text: #FFF9F2;
+  --modal-btn-confirm-hover-border: #F3832D;
   
   /* Result Page */
   --result-bg: #2d1810;
@@ -215,4 +246,10 @@
   --restart-btn-bg: #70e000;
   --restart-btn-text: #2d1810;
   --restart-btn-border: none;
+
+  --game-over-bg: #2d1810;
+  --game-over-title-color: #ff9e00;
+  --game-over-subtitle-color: #ffffff;
+  --game-over-scores-bg: var(--scores-bg, #FFFFFF);
+  --game-over-scores-border-radius: var(--scores-border-radius, 8px);
 }

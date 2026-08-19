@@ -21,14 +21,15 @@
   }
 
   &__subtitle {
-    font-size: 1.5rem;
+    font-family: 'redrose', sans-serif;
+    font-size: 2.5rem;
     font-weight: normal;
-    color: var(--result-subtitle-color, #aaa);
-    margin: 0;
+    color: #FFFFFF;
   }
 
   &__title {
-    font-size: 2.5rem;
+    font-family: 'redrose', sans-serif;
+    font-size: 3.75rem;
     font-weight: bold;
     margin: 0;
   }
